@@ -18,6 +18,7 @@ let storage: Storage = new Storage();
 
 //Auth0
 export function getAuthHttp(http) {
+  console.log("hello getAuth");
   return new AuthHttp(new AuthConfig({
     noJwtError: true,
     globalHeaders: [{'Accept': 'application/json'}],
